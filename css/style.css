@@ -14459,3 +14459,99 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 		padding-bottom: 80px;
 	}
 }
+.tema {
+	font-family: "cooperblack", sans-serif;
+	font-size: 19px;
+	background: #4e192f;
+	color: white;
+	padding: 15px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	text-align: center;
+	max-width: 850px;
+	margin: 0 auto;
+}
+.tema:hover {
+	background: gray;
+	color: white;
+}
+.subtemas {
+	display: none;
+	padding: 10px;
+	background: #ecf0f1;
+	border-radius: 5px;
+}
+.mosaico {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	
+}
+.mosaico div {
+	background: rgb(241, 241, 241);
+	color: #4e192f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	transition: transform 0.3s ease, opacity 0.5s ease, transform 0.5s ease;;
+	width: 200px;
+	box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+	font-weight: bold;
+}
+.mosaico div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.mosaico div:hover {
+	transform: scale(1.05);
+}
+.mosaico img {
+	width: 180px;
+	height: 180px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	transition: transform 0.3s ease;
+	
+}
+.mosaico div:hover img {
+	transform: scale(1.1);
+}
+.mosaico span {
+	text-align: center;
+	font-size: 16px;
+	word-wrap: break-word;
+	font-family: "Zilla Slab", "Times New Roman", Times, serif;
+	letter-spacing: .01em;
+}
+
+/* botones de navegacion entre temas*/
+
+.nav-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 20px 0;
+  }
+  
+  .nav-btn {
+	background-color: #4e192f;
+	color: white;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+	background-color: gray;
+  }
