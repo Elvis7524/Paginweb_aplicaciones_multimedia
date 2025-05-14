@@ -437,23 +437,35 @@
           
         </section>
         <br>
-    <footer>
-      <div class="body-footer">
-        <div class="div-flex mb20">
-          <div class="part">
-            <h4>Quienes somos?</h4>
-            <p>Estudiantes desarrollando un sitio web que ayude a otros compañeros a comprender esta unidad de aprendizaje.</p>
-          </div>
-          <div class="part">
-            <h4 class="mb10">Redes sociales</h4>
-            <a href="https://www.facebook.com/upiicsa.ipn.oficial/?locale=es_LA" target="_blank">Facebook: UPIICSA OFFICIAL</a>
-            <br>
-            <a href="https://www.instagram.com/upiicsa_oficial/?hl=es" target="_blank">Instagram: @upiicsaofficial</a>
-          </div>
-        </div>
-        <center><h5>Derechos reservados 2025</h5></center>
-      </div>
-    </footer>
+    .footer {
+        background-color: #2c3e50; /* Color de fondo oscuro */
+        color: white; /* Texto en color blanco */
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 20px; /* Separación del contenido */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+    .footer a {
+        color: #1abc9c; /* Color llamativo para enlaces */
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<footer class="footer">
+    <p>© 2025 Instituto Político Nacional. Todos los derechos reservados.</p>
+    <p>Este sitio web y su contenido son propiedad del Instituto Político Nacional. 
+    Queda prohibida la reproducción, distribución o modificación total o parcial 
+    sin autorización previa por escrito.</p>
+    <p>Sitio web desarrollado por la Universidad UPIICSA.</p>
+    <p>Para consultas o permisos de uso, contáctenos en 
+    <a href="mailto:contacto@institutopolitico.com">contacto@institutopolitico.com</a>.</p>
+</footer>
     <div class="snackbars" id="form-output-global"></div>
     <script>
       function toggleSubtemas(id) {
