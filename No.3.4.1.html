@@ -96,8 +96,7 @@
         </div>
         
               <div class="titulo-fijo" id="tituloFijo">
-                Mecanismo de funcionamiento de los videojuegos
-                .
+                Pruebas de integracion. 
             </div>
               <style>
 
@@ -153,7 +152,7 @@
              
       </header>
       <br><br>
-      <div class="container"><h4>1.3.2 Mecanismo de funcionamiento de los videojuegos.</h4></div>
+      <div class="container"><h4>3.4.1 Pruebas de integración.</h4></div>
 
         <!-- Base de imagenes lateral derecha -->
         <div class="container">
@@ -178,53 +177,23 @@
                 <li>
                   <h1 class="h1fixed"></h1>
                   <p>
-                    Los videojuegos son sistemas interactivos complejos que integran múltiples componentes técnicos para crear experiencias inmersivas. A diferencia de otros medios digitales, su funcionamiento depende de la sincronización perfecta entre hardware, software y diseño interactivo. Este ensayo examina los mecanismos fundamentales que permiten el funcionamiento de los videojuegos, desde el procesamiento de datos hasta la interacción con el usuario, pasando por la renderización gráfica y la inteligencia artificial.                    <br>
-                    <br>
-                   <p> 
-                    <h4 >
-                    1. Arquitectura Básica de un Videojuego
-                    </h4>
-                    <br>
-                    <h5>
-1.1 Bucle Principal (Game Loop)
-</h5>
-
-El núcleo de todo videojuego es un ciclo continuo que ejecuta tres procesos esenciales:
-<br>
-1.	Entrada (Input): Captura de acciones del jugador (teclado, mando, pantalla táctil).
-<br>
-2.	Actualización (Update): Cálculo de física, IA y cambios en el estado del juego.
-<br>
-3.	Renderizado (Render): Dibujado de gráficos en pantalla.
-
-                  </p>
-                </li>
-                <li> 
-                  <p>
-                    <h4>2. Procesamiento de Entradas del Usuario </h4>
-                    <br>
-<h5>2.1 Captura de Controles</h5>
-
-•	Dispositivos de entrada:
-<br>
-o	Teclado (señales digitales ON/OFF)
-<br>
-o	Mandos (inputs analógicos con sensibilidad variable)
-<br>
-o	Pantallas táctiles (gestos multitáctiles)
-<br>
-<br>
-<h5>2.2 Sistemas de Respuesta</h5>
-
-•	Polling vs. Eventos:
-<br>
-o	Polling: Verificación constante del estado de los controles.
-<br>
-o	Eventos: Acciones disparadas por interrupciones específicas (ej. botón pulsado).
-<br>
-•	Dead zones: Zonas muertas en joysticks para evitar inputs no deseados.
-
-                                
+                    Las pruebas de integración son un enfoque que verifica cómo funcionan conjuntamente las 
+                    diferentes partes de una aplicación. El objetivo principal de las pruebas de integración 
+                    es verificar que los diferentes módulos o servicios de un sistema funcionen correctamente. 
+                    Este tipo de prueba es crucial, ya que, si bien las unidades individuales pueden funcionar 
+                    correctamente por sí solas, pueden surgir problemas al interactuar entre sí. Más adelante, 
+                    se profundizará en la importancia de las pruebas de integración.
+                    <br><br>
+                    El testing es una de las etapas más cruciales en cuanto al desarrollo y se encuentra dividido 
+                    por una serie de pruebas de gran relevancia. Entre ellas las pruebas de integración son de las 
+                    que hablaremos en este caso, dedicando nuestra atención también a conceptos como otros tipos de 
+                    prueba y los distintos tipos de integración.
+                    <br><br>
+                    Las pruebas integrales se tienen que aplicar justo después de haber llevado a cabo cada 
+                    prueba unitaria con la intención de probar los métodos aplicados en el desarrollo. Si no 
+                    existe ningún problema de código y las pruebas unitarias han terminado de forma exitosa 
+                    se podrá pasar al test integral para asegurarse de que en este punto no se produce ningún 
+                    tipo de problema en la combinación de elementos unitarios.                                
                   </p>
                 </li>
               </ul>
@@ -253,55 +222,24 @@ o	Eventos: Acciones disparadas por interrupciones específicas (ej. botón pulsa
                   <br>
   
                   <p>
-                   <h4> 3. Renderización Gráfica</h4>
-                    <br>
-<h5>3.1 Pipeline Gráfico</h5>
-
-Proceso por etapas para convertir modelos 3D en imágenes 2D:
-<br>
-1.	Geometría: Posición de vértices y polígonos.
-<br>
-2.	Vertex Shading: Iluminación y transformaciones.
-<br>
-3.	Rasterización: Conversión a píxeles.
-<br>
-4.	Pixel Shading: Aplicación de texturas y efectos.
-<br>
-<br>
-<h5>3.2 Técnicas Avanzadas</h5>
-
-•	Ray Tracing: Simulación realista de luz (NVIDIA RTX).
-<br>
-•	DLSS/FSR: Upscaling inteligente para mejorar rendimiento.
-<br>
-•	Culling: Eliminación de objetos no visibles para optimizar.
-
-
-                </p> 
-                <br>
-                <br>
-                <p>
-                  <h4>4. Inteligencia Artificial en Videojuegos</h4>
-
-                  <br>
-<h5>4.1 Comportamiento de NPCs</h5>
-
-•	Árboles de decisión: Elecciones basadas en condiciones predefinidas.
-<br>
-•	Máquinas de estados finitos: Transiciones entre comportamientos (ej. "alerta", "pasivo").
-<br>
-•	Pathfinding: Algoritmos como A* para navegación en mapas.
-<br>
-<br>
-<h5>4.2 IA Adaptativa</h5>
-•	Sistemas de aprendizaje: NPCs que evolucionan según el estilo del jugador.
-<br>
-•	Proceduralidad: Generación dinámica de diálogos o misiones.
-
-
-
-                  
-  
+                 <h5>¿Cuáles son los pasos claves en las pruebas de integración?</h5>
+                  Los pasos clave en las pruebas de integración están diseñados para garantizar 
+                  que los distintos componentes de un sistema de software funcionen conjuntamente 
+                  según lo previsto. A continuación, se presenta una breve guía paso a paso del 
+                  proceso de pruebas de integración:
+                 <h5> Paso 1: Planificar las pruebas de integración</h5>
+                  •	Determinar qué módulos o componentes se integrarán y probarán.
+                  •	Identificar las interfaces entre los módulos que necesitan ser probados.
+                  •	Elija el enfoque de prueba de integración adecuado (por ejemplo, de arriba 
+                    hacia abajo, de abajo hacia arriba, incremental, big bang o sándwich).
+                  <h5>Paso 2: Diseñar casos de prueba</h5>
+                  •	Desarrollar escenarios de prueba basados en las interacciones entre módulos.
+                  •	Identificar o crear los datos de prueba necesarios para ejecutar los casos de prueba.
+                  •	Escriba scripts de prueba automatizados o prepare casos de prueba manuales para pruebas de integración.
+                  <h5>Paso 3: Configurar el entorno de prueba</h5>
+                  •	Configurar el hardware, el software, la red y otras configuraciones necesarias para replicar el entorno de producción.
+                  •	Instalar y configurar cualquier herramienta de prueba necesaria para ejecutar las pruebas.
+                  •	Asegúrese de que el entorno de prueba sea estable y esté listo para las pruebas.
                 </p>
                 </div>
               </div>
@@ -333,48 +271,29 @@ Proceso por etapas para convertir modelos 3D en imágenes 2D:
                 <li>
                   <h1 class="h1fixed"></h1>
                   <p>
-                    <h4>
-                    5. Sincronización y Gestión de Recursos
-                  </h4>
-                    <br>
-<h5>5.1 Sistemas de Tiempo </h5>
-
-•	Delta Time: Ajuste de velocidad según FPS para movimiento uniforme.
-<br>
-•	Time Scaling: Efectos de cámara lenta o pausa.
-<br>
-<br>
-<h5>5.2 Gestión de Memoria</h5>
-
-•	Pooling: Reutilización de objetos para evitar carga constante.
-<br>
-•	Streaming: Carga dinámica de assets en juegos de mundo abierto.
-
-                                               
-                                        
-                    <br>
-                    <br>
-                  <p>
-                    <h4>6. Redes y Multijugador </h4>
-                    <br>
-<h5>6.1 Modelos de Conexión </h5>
-
-•	Peer-to-Peer (P2P): Conexión directa entre jugadores (ej. Fighting Games).
-<br>
-•	Cliente-Servidor: Servidor central que valida acciones (MMORPGs).
-<br>
-<br>
-<h5>6.2 Técnicas de Sincronización</h5>
-
-•	Interpolación: Suavizado de movimientos entre actualizaciones.
-<br>
-•	Predicción: Anticipación de acciones para reducir latencia.
-<br>
-•	Rollback: Reconstrucción de estados pasados en caso de desincronización.
-
-                    
-                    
-                    
+                    <h5>Paso 4: Ejecutar pruebas de integración</h5>
+                    •	Combine los módulos o componentes en función de la estrategia de integración elegida.
+                    •	Ejecutar los casos de prueba diseñados para las pruebas de integración.
+                    •	Supervise la ejecución y registre los resultados de cada caso de prueba, anotando cualquier problema o falla.
+                    <h5>Paso 5: Analizar los resultados de la prueba</h5>
+                    •	Revise los registros para identificar cualquier problema o defecto que haya ocurrido durante las pruebas.
+                    •	Categorizar y priorizar los defectos en función de su impacto y gravedad.
+                    •	Registre los resultados de las pruebas, incluidos los defectos encontrados, en un informe de pruebas.
+                    <h5>Paso 6: Depuración y corrección de defectos</h5>
+                    •	Investigar las causas fundamentales de los defectos identificados durante las pruebas.
+                    •	Trabajar con el equipo de desarrollo para resolver los defectos.
+                    •	Vuelva a ejecutar los casos de prueba fallidos para asegurarse de que se hayan solucionado
+                    los problemas y de que no se hayan introducido problemas nuevos.
+                    <h5>Paso 7: Opte por las pruebas de regresión</h5>
+                    •	Ejecuta un conjunto de pruebas de regresión para garantizar que los cambios recientes 
+                    no hayan afectado negativamente la funcionalidad existente.
+                    •	Confirme que se hayan corregido todos los defectos y que el sistema se comporte como se esperaba.
+                    <h5>Paso 8: Crear informes y documentación</h5>
+                    •	Compilar un informe de prueba detallado que resuma el proceso de prueba de integración, 
+                    incluidos los casos de prueba ejecutados, los defectos encontrados y corregidos, y la estabilidad 
+                    general del sistema.
+                    •	Documente las lecciones aprendidas, las mejores prácticas y las actualizaciones necesarias para 
+                    futuros esfuerzos de pruebas de integración.
                   </p>
                 </li>
                 <li> 
