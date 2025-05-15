@@ -13,307 +13,338 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
-    <style>
-      @keyframes mover {
-          0% { transform: translateX(0); }
-          50% { transform: translateX(20px); } /* Se mueve a la derecha */
-          100% { transform: translateX(0); } /* Vuelve a la posición original */
-      }
-  
-      .imagen-animada {
-          width: 300px;
-          animation: mover 2s infinite ease-in-out; /* Movimiento constante */
-      }
+      <style>
+          @keyframes mover {
+              0% {
+                  transform: translateX(0);
+              }
+
+              50% {
+                  transform: translateX(20px);
+              }
+              /* Se mueve a la derecha */
+              100% {
+                  transform: translateX(0);
+              }
+              /* Vuelve a la posición original */
+          }
+
+          .imagen-animada {
+              width: 300px;
+              animation: mover 2s infinite ease-in-out; /* Movimiento constante */
+          }
       </style>
       <style>
-    .imagen-hover {
-        width: 300px; /* Tamaño de la imagen */
-        transition: transform 0.5s ease-in-out; /* Transición suave */
-    }
+          .imagen-hover {
+              width: 300px; /* Tamaño de la imagen */
+              transition: transform 0.5s ease-in-out; /* Transición suave */
+          }
 
-    .imagen-hover:hover {
-        transform: scale(1.1); /* Aumenta de tamaño al pasar el mouse */
-    }
-</style>
-<style>
-  .imagen-zoom-rotar {
-      width: 300px;
-      transition: transform 0.5s ease-in-out;
-  }
+              .imagen-hover:hover {
+                  transform: scale(1.1); /* Aumenta de tamaño al pasar el mouse */
+              }
+      </style>
+      <style>
+          .imagen-zoom-rotar {
+              width: 300px;
+              transition: transform 0.5s ease-in-out;
+          }
 
-  .imagen-zoom-rotar:hover {
-      transform: scale(1.2) rotate(10deg);
-  }
-</style>
-<style>
-  @keyframes zigzag {
-      0% { transform: translate(0, 0); }
-      25% { transform: translate(20px, 10px); }
-      50% { transform: translate(-20px, -10px); }
-      75% { transform: translate(20px, -10px); }
-      100% { transform: translate(0, 0); }
-  }
+              .imagen-zoom-rotar:hover {
+                  transform: scale(1.2) rotate(10deg);
+              }
+      </style>
+      <style>
+          @keyframes zigzag {
+              0% {
+                  transform: translate(0, 0);
+              }
 
-  .imagen-zigzag {
-      width: 300px;
-      animation: zigzag 3s infinite ease-in-out;
-  }
-</style>
+              25% {
+                  transform: translate(20px, 10px);
+              }
 
-  </style>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-logo"><a class="brand" href="index.html"></a>
+              50% {
+                  transform: translate(-20px, -10px);
+              }
+
+              75% {
+                  transform: translate(20px, -10px);
+              }
+
+              100% {
+                  transform: translate(0, 0);
+              }
+          }
+
+          .imagen-zigzag {
+              width: 300px;
+              animation: zigzag 3s infinite ease-in-out;
+          }
+      </style>
+
+      </style>
+      <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+      <div class="preloader">
+          <div class="preloader-logo">
+              <a class="brand" href="index.html"></a>
+          </div>
+          <div class="preloader-body">
+          </div>
+
       </div>
-      <div class="preloader-body">
-      </div>
-
-    </div>
-    <div class="page">
-      <header class="page-header">
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <div class="rd-navbar-panel">
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa2.jpg" alt="" width="300" height="60"/><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60"/></a>
-                  </div>
-                </div>
-                <div class="rd-navbar-nav-wrap">
-                  <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">INICIO</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="temario.html">CONTENIDO</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">NOTICIAS</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
-                    </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
-                    </li>
-                  </ul>
-                </div>
+      <div class="page">
+          <header class="page-header">
+              <div class="rd-navbar-wrap">
+                  <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                      <div class="rd-navbar-main-outer">
+                          <div class="rd-navbar-main">
+                              <div class="rd-navbar-panel">
+                                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                  <div class="rd-navbar-brand">
+                                      <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/upiicsa2.jpg" alt="" width="300" height="60" /><img class="brand-logo-light" src="images/upiicsa.jpg" alt="" width="300" height="60" /></a>
+                                  </div>
+                              </div>
+                              <div class="rd-navbar-nav-wrap">
+                                  <ul class="rd-navbar-nav">
+                                      <li class="rd-nav-item active">
+                                          <a class="rd-nav-link" href="index.html">INICIO</a>
+                                      </li>
+                                      <li class="rd-nav-item">
+                                          <a class="rd-nav-link" href="temario.html">CONTENIDO</a>
+                                      </li>
+                                      <li class="rd-nav-item">
+                                          <a class="rd-nav-link" href="index.html">NOTICIAS</a>
+                                      </li>
+                                      <li class="rd-nav-item">
+                                          <a class="rd-nav-link" href="integrantes.html">INTEGRANTES</a>
+                                      </li>
+                                      <li class="rd-nav-item">
+                                          <a class="rd-nav-link" href="acercade.html">ACERCA DE</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
               </div>
-            </div>
-          </nav>
-        </div>
-        
+
               <div class="titulo-fijo" id="tituloFijo">
-                PROPUESTA GRAFICA JUSTIFICACION.
-            </div>
+                  PROPUESTA GRAFICA JUSTIFICACION.
+              </div>
               <style>
 
-                /* Barra de navegación fija en la parte superior */
-                .navbar {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 60px; /* Altura de la barra */
-                    background-color: #2c3e50;
-                    color: white;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 18px;
-                    font-weight: bold;
-                    z-index: 1000; /* Asegura que esté sobre otros elementos */
-                }
-            
-                /* Título fijo debajo de la barra de navegación */
-                .titulo-fijo {
-                    position: fixed;
-                    top: 75px; /* Debe ser igual a la altura de la barra */
-                    left: 0;
-                    width: 100%;
-                    background-color: #34495e;
-                    color: white;
-                    text-align: center;
-                    padding: 15px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    z-index: 999; /* Un poco menor que la barra de navegación */
-                }
-            
-                /* Contenido para hacer scroll */
-                .contenido {
-                    margin-top: 120px; /* Espacio para no tapar el contenido con la barra y el título */
-                    padding: 20px;
-                    font-size: 16px;
-                }
-            </style>
-            
-            <!-- Barra de navegación fija -->
-  
-            
-            <!-- Título fijo debajo de la barra -->
-           
-            
-            <!-- Contenido para probar el scroll -->
-         
-            
-              
-            
-      </header>
-      <br>
-      <br>
-      <div class="container">
-      <h3>3.1.2 Propuesta grafica justificacion.</h3>
-      </div>
-       <!-- Base de imagenes lateral derecha -->
-        <div class="container">
-          <div class="row row-50 flex-lg-row-reverse">
-            <div class="col-xl-4">
-              <ul class="list-lg">
-                
-                <li>
-                  <p><img  src="images/ubicua1.png" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
-                      <BR>
-                      <BR>
-                      <BR>
-                      <BR>
-                    <p><img class="imagen-hover" src="images/ubicua2.jpg" alt=""  width="340" height="250"/></p>
-                 </li>
-              </ul>
-            </div>
-      <!-- contenido lateral derecho -->
-            <div class="col-xl-8">
-              
-              <ul class="list-xl">
-                <li>
-                  <h1 class="h1fixed"></h1>
-                  <p>
-                    La sociedad de hoy en día está inmersa en un mundo globalizado en el que predomina el uso de diversas herramientas tecnológicas 
-                    como el celular, la computadora, tabletas electrónicas, entre otras. De manera general se podría decir que algunas personas para
-                     llevar a cabo la mayoría de sus actividades están acostumbradas al uso del Internet y de la tecnología. La manera en que han 
-                     evolucionado los inventos tecnológicos es vertiginosa y sin duda las personas para poder llevar a cabo sus actividades laborales
-                      y cotidianas se han tenido que adaptar a esos cambios.
-                    <br>
-                    <br>
-                    Diseño de Contenidos: Es donde se establecerán los objetivos específicos de la aplicación (conceptuales, procedimentales y actitudinales)
-                     y las unidades didácticas adecuadas para la consecución de estos objetivos. Para cada una de estas unidades didácticas se establecerá: el 
-                     contenido temático, las actividades, la evaluación, las fuentes documentales y los recursos multimedia que se van a utilizar.
-                  </p>
-                </li>
-                <br>
-                  <p>
-                    
-                    Interactividad del Programa: Para ello se confeccionará el mapa de navegación en el que se indicarán gráficamente los itinerarios 
-                    que el usuario puede seguir en el programa cuando busca información, señalando los vínculos entre pantallas y los vínculos entre eventos.
-                  </p>
-              </ul>
-            </div>
-          </div>
-        </div>
-      <!--contenido con imagen lateral izquierdo -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-5 col-xl-10">
-              
-              <div class="row row-30">
-                <div class="col-md-6">
-                  <br>
-                   <p><img class="imagen-zoom-rotar" src="images/ubicua3.jpg" alt="" width="340" height="250"/></p>
-                </div>
-                <div class="col-md-6">
-                <br>
-                  
-                  <p>
-                    Contenido del Diseño Técnico: Dependerá del diseño pedagógico, de los requerimientos técnicos y de los 
-                    lenguajes o sistemas utilizados para desarrollar la aplicación. Los aspectos que se trabajan en el diseño técnico son:
-                    <br>  <br>
-                    Elementos Multimedia: Este es el material audiovisual que va a implementarse en la aplicación.
-                     Su diseño tendrá siempre presente el resultado final que se desea obtener.
-                </p> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="container">
-          <div class="row row-50 flex-lg-row-reverse">
-            <div class="col-xl-4">
-              <ul class="list-lg">
-                
-                <li>
-                  <p><img  src="images/ubicua4.jpg" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
-                      <BR>
-                      <BR>
-                      <BR>
-                      <BR>
-                    <p><img class="imagen-zigzag" src="images/ubicua5.jpg" alt=""  width="340" height="250"/></p>
-                      <BR>
-                  </li>
-              </ul>
-            </div>
-  
-       <!-- contenido lateral derecho -->
-            <div class="col-xl-8">
-              
-              <ul class="list-xl">
-                <li>
-                  <h1 class="h1fixed"></h1>
-                  <p>
-                    Interfaces del Usuario: Es el espacio de trabajo por llamarlo de alguna manera, es decir la pantalla del ordenador,
-                     en el que el usuario encontrará los elementos que le van a permitir interactuar con el sistema informático.
-                    <br><br>
+                  /* Barra de navegación fija en la parte superior */
+                  .navbar {
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 60px; /* Altura de la barra */
+                      background-color: #2c3e50;
+                      color: white;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      font-size: 18px;
+                      font-weight: bold;
+                      z-index: 1000; /* Asegura que esté sobre otros elementos */
+                  }
 
-                    <h5>JUSTIFICACIÓN</h5>
-                    <br><br>
-                    Estamos viviendo en un mundo donde los progresos tecnológicos han tenido un crecimiento sorprendente, bajo esta situación el sistema educativo debe poner énfasis 
-                    en el desarrollo de habilidades digitales, tanto en los docentes como en los alumnos; ambos deben tener la oportunidad de acceder a nuevos tipos de materiales 
-                    educativos, nuevas formas de aprender y de enseñar.
-                  </p>
-                </li>
-               
-              </ul>
-            </div>
+                  /* Título fijo debajo de la barra de navegación */
+                  .titulo-fijo {
+                      position: fixed;
+                      top: 75px; /* Debe ser igual a la altura de la barra */
+                      left: 0;
+                      width: 100%;
+                      background-color: #34495e;
+                      color: white;
+                      text-align: center;
+                      padding: 15px;
+                      font-size: 20px;
+                      font-weight: bold;
+                      z-index: 999; /* Un poco menor que la barra de navegación */
+                  }
+
+                  /* Contenido para hacer scroll */
+                  .contenido {
+                      margin-top: 120px; /* Espacio para no tapar el contenido con la barra y el título */
+                      padding: 20px;
+                      font-size: 16px;
+                  }
+              </style>
+
+              <!-- Barra de navegación fija -->
+              <!-- Título fijo debajo de la barra -->
+              <!-- Contenido para probar el scroll -->
+
+
+
+
+          </header>
+          <br>
+          <br>
+          <div class="container">
+              <h3>3.1.2 Propuesta grafica justificacion.</h3>
           </div>
-        </div>
+          <!-- Base de imagenes lateral derecha -->
+          <div class="container">
+              <div class="row row-50 flex-lg-row-reverse">
+                  <div class="col-xl-4">
+                      <ul class="list-lg">
+
+                          <li>
+                              <p><img src="images/ubicua1.png" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                              <BR>
+                              <BR>
+                              <BR>
+                              <BR>
+                              <p><img class="imagen-hover" src="images/ubicua2.jpg" alt="" width="340" height="250" /></p>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- contenido lateral derecho -->
+                  <div class="col-xl-8">
+
+                      <ul class="list-xl">
+                          <li>
+                              <h1 class="h1fixed"></h1>
+                              <p>
+                                  La sociedad de hoy en día está inmersa en un mundo globalizado en el que predomina el uso de diversas herramientas tecnológicas
+                                  como el celular, la computadora, tabletas electrónicas, entre otras. De manera general se podría decir que algunas personas para
+                                  llevar a cabo la mayoría de sus actividades están acostumbradas al uso del Internet y de la tecnología. La manera en que han
+                                  evolucionado los inventos tecnológicos es vertiginosa y sin duda las personas para poder llevar a cabo sus actividades laborales
+                                  y cotidianas se han tenido que adaptar a esos cambios.
+                                  <br>
+                                  <br>
+                                  Diseño de Contenidos: Es donde se establecerán los objetivos específicos de la aplicación (conceptuales, procedimentales y actitudinales)
+                                  y las unidades didácticas adecuadas para la consecución de estos objetivos. Para cada una de estas unidades didácticas se establecerá: el
+                                  contenido temático, las actividades, la evaluación, las fuentes documentales y los recursos multimedia que se van a utilizar.
+                              </p>
+                          </li>
+                          <br>
+                          <p>
+
+                              Interactividad del Programa: Para ello se confeccionará el mapa de navegación en el que se indicarán gráficamente los itinerarios
+                              que el usuario puede seguir en el programa cuando busca información, señalando los vínculos entre pantallas y los vínculos entre eventos.
+                          </p>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!--contenido con imagen lateral izquierdo -->
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-xl-10">
+
+                      <div class="row row-30">
+                          <div class="col-md-6">
+                              <br>
+                              <p><img class="imagen-zoom-rotar" src="images/ubicua3.jpg" alt="" width="340" height="250" /></p>
+                          </div>
+                          <div class="col-md-6">
+                              <br>
+
+                              <p>
+                                  Contenido del Diseño Técnico: Dependerá del diseño pedagógico, de los requerimientos técnicos y de los
+                                  lenguajes o sistemas utilizados para desarrollar la aplicación. Los aspectos que se trabajan en el diseño técnico son:
+                                  <br>  <br>
+                                  Elementos Multimedia: Este es el material audiovisual que va a implementarse en la aplicación.
+                                  Su diseño tendrá siempre presente el resultado final que se desea obtener.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container">
+              <div class="row row-50 flex-lg-row-reverse">
+                  <div class="col-xl-4">
+                      <ul class="list-lg">
+
+                          <li>
+                              <p><img src="images/ubicua4.jpg" alt="" class="imagen-animada" width="340" height="250" /></p><BR>
+                              <BR>
+                              <BR>
+                              <BR>
+                              <BR>
+                              <p><img class="imagen-zigzag" src="images/ubicua5.jpg" alt="" width="340" height="250" /></p>
+                              <BR>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <!-- contenido lateral derecho -->
+                  <div class="col-xl-8">
+
+                      <ul class="list-xl">
+                          <li>
+                              <h1 class="h1fixed"></h1>
+                              <p>
+                                  Interfaces del Usuario: Es el espacio de trabajo por llamarlo de alguna manera, es decir la pantalla del ordenador,
+                                  en el que el usuario encontrará los elementos que le van a permitir interactuar con el sistema informático.
+                                  <br><br>
+
+                                  <h5>JUSTIFICACIÓN</h5>
+                                  <br><br>
+                                  Estamos viviendo en un mundo donde los progresos tecnológicos han tenido un crecimiento sorprendente, bajo esta situación el sistema educativo debe poner énfasis
+                                  en el desarrollo de habilidades digitales, tanto en los docentes como en los alumnos; ambos deben tener la oportunidad de acceder a nuevos tipos de materiales
+                                  educativos, nuevas formas de aprender y de enseñar.
+                              </p>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="nav-buttons">
+          <a href="No.3.1.1.html"><button class="nav-btn">← Tema anterior</button></a>
+          <a href="temario.html"><button class="nav-btn">📘 Temario</button></a>
+          <a href="No.3.2.html"><button class="nav-btn">Tema siguiente →</button></a>
       </div>
 
-      <!--contenido con imagen lateral izquierdo 
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10 col-xl-8">
-              
-              <div class="row row-30">
-                <div class="col-md-6"><img class="imagen-zoom-rotar" src="#" alt="" width="340" height="250"/>
-                </div>
-                <div class="col-md-6">
-                  <p> 
-                </p> 
+      <!--contenido con imagen lateral izquierdo
+          <section class="section section-lg bg-default">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-10 col-xl-8">
+
+                  <div class="row row-30">
+                    <div class="col-md-6"><img class="imagen-zoom-rotar" src="#" alt="" width="340" height="250"/>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                    </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      Texto lateral derecho de videoreproductor 
-      <section class="section section-lg bg-default">
-        <div class="container">
-          <div class="row row-50 justify-content-center justify-content-xl-between flex-lg-row-reverse">
-            <div class="col-md-11 col-lg-6 col-xl-5">
-              <div class="box-1">
-                <h2></h2>
-                <p>Las aplicaciones multimedia en la educación son recursos que combinan texto, imágenes, audio, video y animación para enseñar y aprender. Estas aplicaciones pueden ayudar a los estudiantes a desarrollar habilidades digitales, como la creatividad, el pensamiento crítico y la resolución de problemas. </p>
+          </section>
+          Texto lateral derecho de videoreproductor
+          <section class="section section-lg bg-default">
+            <div class="container">
+              <div class="row row-50 justify-content-center justify-content-xl-between flex-lg-row-reverse">
+                <div class="col-md-11 col-lg-6 col-xl-5">
+                  <div class="box-1">
+                    <h2></h2>
+                    <p>Las aplicaciones multimedia en la educación son recursos que combinan texto, imágenes, audio, video y animación para enseñar y aprender. Estas aplicaciones pueden ayudar a los estudiantes a desarrollar habilidades digitales, como la creatividad, el pensamiento crítico y la resolución de problemas. </p>
+                  </div>
+                </div>
+                video incrustado
+                <div class="col-md-11 col-lg-6">
+                  <div class="thumbnail-media" style="background-image: url(images/TIPOS1.jpg);"><a class="icon thumbnail-media-icon mdi mdi-play-circle-outline" href="https://www.youtube.com/watch?v=4AjHxqt2WjM" data-lightgallery="item"></a></div>
+                </div>
               </div>
             </div>
-            video incrustado
-            <div class="col-md-11 col-lg-6">
-              <div class="thumbnail-media" style="background-image: url(images/TIPOS1.jpg);"><a class="icon thumbnail-media-icon mdi mdi-play-circle-outline" href="https://www.youtube.com/watch?v=4AjHxqt2WjM" data-lightgallery="item"></a></div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
-    </div>
--->
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    -->
+      <div class="snackbars" id="form-output-global"></div>
+      <script src="js/core.min.js"></script>
+      <script src="js/script.js"></script>
 
   </body>
   <style>
