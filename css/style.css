@@ -14566,13 +14566,5 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	background-color: gray;}
 
 	  
-.swiper-slide {
-    width: 100px;   /* Cambia el ancho de cada slide */
-    height: 200px;  /* Cambia el alto de cada slide */
-}
-.swiper-container {
-    width: 50%;     /* o el valor que desees */
-    height: 200px;  /* o el valor que desees */
-}
-	  
+
   
