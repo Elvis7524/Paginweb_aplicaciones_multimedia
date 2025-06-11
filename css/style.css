@@ -14563,7 +14563,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
   
   .nav-btn:hover {
-	background-color: gray;
+	background-color: gray;}
+
 	  
 .swiper-slide {
     width: 100px;   /* Cambia el ancho de cada slide */
@@ -14574,4 +14575,4 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 200px;  /* o el valor que desees */
 }
 	  
-  }
+  
