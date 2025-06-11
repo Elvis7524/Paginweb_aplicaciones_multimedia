@@ -7,7 +7,7 @@ button:focus {
 	outline: none !important;
 }
 .swiper-container {
-    width: 80%;     /* o el valor que desees */
+    width: 50%;     /* o el valor que desees */
     height: 200px;  /* o el valor que desees */
 }
 header{			/*Fondo en el header */
