@@ -7,7 +7,7 @@ button:focus {
 	outline: none !important;
 }
 .swiper-slide {
-    width: 300px;   /* Cambia el ancho de cada slide */
+    width: 100px;   /* Cambia el ancho de cada slide */
     height: 200px;  /* Cambia el alto de cada slide */
 }
 .swiper-container {
