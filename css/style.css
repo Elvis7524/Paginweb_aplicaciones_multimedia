@@ -17,7 +17,7 @@ header{			/*Fondo en el header */
 }
 .rd-navbar-panel { /*Modificacion del tamaño en la barra de navegacion */
   width: 100px; /* o el tamaño que prefieras */
-  height: 10px; /* ajusta según tus necesidades */
+  height: 20px; /* ajusta según tus necesidades */
 }
 
 button {
