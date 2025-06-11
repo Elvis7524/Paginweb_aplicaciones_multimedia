@@ -8,7 +8,7 @@ button:focus {
 }
 .swiper-slide {
     width: 300px;   /* Cambia el ancho de cada slide */
-    height: 250px;  /* Cambia el alto de cada slide */
+    height: 200px;  /* Cambia el alto de cada slide */
 }
 .swiper-container {
     width: 50%;     /* o el valor que desees */
