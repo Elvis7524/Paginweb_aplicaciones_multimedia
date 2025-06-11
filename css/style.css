@@ -6,6 +6,10 @@ a:focus,
 button:focus {
 	outline: none !important;
 }
+.swiper-slide {
+    width: 300px;   /* Cambia el ancho de cada slide */
+    height: 250px;  /* Cambia el alto de cada slide */
+}
 .swiper-container {
     width: 50%;     /* o el valor que desees */
     height: 200px;  /* o el valor que desees */
