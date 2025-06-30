@@ -13,8 +13,24 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   
   </head>
+  <script>
+    function agrandar(img) {
+      img.classList.toggle("ampliada");
+    }
+  </script>
   <style>
-   
+   .imagen {
+      width: 200px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .ampliada {
+      transform: scale(2); /* Aumenta el tamaño al doble */
+      z-index: 10;
+      position: relative;
+    }
+    
     @keyframes mover {
         0% { transform: translateX(0); }
         50% { transform: translateX(20px); } /* Se mueve a la derecha */
@@ -225,11 +241,11 @@
     <section id="galeria">
         <h2>Galeria de Fotos</h2>
         <div class="galeria-container">
-                <img src="post1.jpg" alt="Foto 1">
-                <img src="post2.jpg" alt="Foto 2">
-                <img src="post3.jpg" alt="Foto 3">
-                <img src="post4.jpg" alt="Foto 4">
-                <img src="post5.jpeg" alt="Foto 5">
+                <img src="post1.jpg" alt="Foto 1" class="imagen" onclick="agrandar(this)">
+                <img src="post2.jpg" alt="Foto 2" class="imagen" onclick="agrandar(this)">
+                <img src="post3.jpg" alt="Foto 3" class="imagen" onclick="agrandar(this)">
+                <img src="post4.jpg" alt="Foto 4" class="imagen" onclick="agrandar(this)">
+                <img src="post5.jpeg" alt="Foto 5" class="imagen" onclick="agrandar(this)">
                 <!--Añade mas imagenes según sea necesario-->
          
         </div>
