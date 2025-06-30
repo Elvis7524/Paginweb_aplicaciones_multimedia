@@ -13,7 +13,101 @@
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   
   </head>
+  <script>
+  const images = [
+    "post1.jpg",
+    "post2.jpg",
+    "post3.jpg",
+    "post4.jpg",
+    "post5.jpeg"
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    if (currentIndex >= images.length) currentIndex = 0;
+    document.getElementById("lightbox-img").src = images[currentIndex];
+  }
+
+  // Soporte para teclas de flecha
+  document.addEventListener("keydown", (e) => {
+    if (document.getElementById("lightbox").style.display === "flex") {
+      if (e.key === "ArrowRight") changeImage(1);
+      if (e.key === "ArrowLeft") changeImage(-1);
+      if (e.key === "Escape") closeLightbox();
+    }
+  });
+</script>
+  
   <style>
+    .galeria {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .galeria img {
+      width: 150px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Estilo del lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      padding: 20px;
+    }
+
+    .prev { left: 0; }
+    .next { right: 0; }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+    }
     @keyframes mover {
         0% { transform: translateX(0); }
         50% { transform: translateX(20px); } /* Se mueve a la derecha */
@@ -222,6 +316,7 @@
     -->
     <!--Galeraia de Fotos-->
     <section id="galeria">
+      <div class="galeria">
         <h2>Galeria de Fotos</h2>
         <div class="galeria-container">
                 <img src="post1.jpg" alt="Foto 1">
@@ -232,7 +327,14 @@
                 <!--Añade mas imagenes según sea necesario-->
          
         </div>
+      </div>
     </section>
+      <div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <span class="nav prev" onclick="changeImage(-1)">&#10094;</span>
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+  <span class="nav next" onclick="changeImage(1)">&#10095;</span>
+</div>
     <div class="snackbars" id="form-output-global"></div>
     <!--Scripts-->
     <script src="js/core.min.js"></script>
